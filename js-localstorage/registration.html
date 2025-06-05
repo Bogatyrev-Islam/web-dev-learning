@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="registration.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-identity">
+        <h3><a href="./index.html">Мarket.ru</a></h3>
+      </div>
+
+      <nav class="site-navigation">
+        <ul class="nav">
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="./autorization.html">Авторизация</a>
+    </header>
+
+    <main>
+      <div class="login-container">
+        <h2>Регистрация</h2>
+        <form name="registration" class="login-form">
+          <input name="name" type="text" placeholder="Имя" required/>
+          <input name="surname" type="text" placeholder="Фамилия (не обязательно)"/>
+          <input name="number_phone" value="+7 " type="text" placeholder="Номер телефона" required/>
+          <input name="email" type="text" placeholder="Адрес электронной почты" required/>
+          <input name="password" type="password" placeholder="Пароль от электронной почты" required/>
+          <input name="address" type="text" placeholder="Регион проживания" required/>
+          <input name="photo" type="text" placeholder="SRC фото профиля (не обязательно)"/>
+          <p id="regError"></p>
+          <button type="submit" >Создать аккаунт</button>
+          <a href="autorization.html">Войти в аккаунт</a>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script src="registration.js"></script>
+</html>

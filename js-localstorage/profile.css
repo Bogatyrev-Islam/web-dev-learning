@@ -1,0 +1,167 @@
+body{
+    background-color: rgb(188, 227, 237);
+    font-family: sans-serif;
+    margin: 0;
+}
+header{
+    background-color: rgb(99, 181, 188);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px;
+    font-weight: 700;
+}
+nav a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(99, 181, 188);
+    transition: 0.6s;
+}
+main{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+.profile{
+    margin: 0 auto;
+    width: 90%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+}
+.left_cont{
+    height: 100%;
+    width: 600px;
+}
+.left_top{
+    width: 360px;
+    height: 360px;
+    background-color: white;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+.left_top img{
+    width: 180px;
+    height: 180px;
+    margin: 5px auto;
+    border-radius: 50%;
+}
+.left_top h3{
+    margin: 5px auto;
+}
+.left_top p{
+    margin: 5px auto;
+    color: gray;
+}
+.left_top_button{
+    display: flex;
+    flex-direction: row;
+    margin: 5px auto;
+}
+.left_top_button button{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(24, 43, 217);
+    margin: 5px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.left_top_button button:hover{
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    border: 1px solid blue;
+    transform: scale(1.1);
+}
+.left_bottom{
+    width: 360px;
+    height: 180px;
+    background-color: white;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+.left_bottom div{
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid gainsboro;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left_bottom div i{
+    font-size: 20px;
+    margin: 10px;
+}
+.left_bottom div p{
+    font-weight: normal;
+    color: gray;
+    margin-right: 10px;
+}
+.right_cont{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.right_top{
+    background-color: white;
+    width: 97%;
+    height: 250px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right_top div{
+    width: 95%;
+    height: 20%;
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    justify-content: flex-start;
+}
+.right_top div h4{
+   width: 200px;
+}
+.right_top div p{
+    color: gray;
+}
+.right_bottom{
+    width: 97%;
+    height: 290px;
+    display: flex;
+    justify-content: space-between;
+}
+.right_bottom_left{
+    background-color: white;
+    width: 440px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.right_bottom_left div{
+    width: 90%;
+    height: 35px;
+    border-bottom: 7px solid blue;
+    margin: 0px auto;
+    display: flex;
+    align-items: flex-end;
+    font-size: 14px;
+}
+.right_bottom_right{
+    background-color: white;
+    width: 440px;
+    height: 100%;
+}
