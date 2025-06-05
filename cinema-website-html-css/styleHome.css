@@ -1,0 +1,454 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+/* стилизация полосы проктрутки */
+::-webkit-scrollbar {
+    width: 12px; /* Ширина полосы прокрутки */
+}
+
+::-webkit-scrollbar-thumb {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 6px; /* Скругление углов бегунка */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000; /* Цвет фона полосы прокрутки */
+    border-radius: 6px; /* Скругление углов фона полосы прокрутки */
+}
+/* Задний фон */
+.background_image{
+    width: 100%;
+    opacity: 30%;
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+}
+.header_fon{
+    width: 95%;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.915);
+    position: fixed;
+    top: 0px;
+    border: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+/* Основной контейнер */
+.oll_container{
+width: 95%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+/* Шапка */
+.header_oll{
+width: 95%;
+position: fixed;
+top: 10px;
+display: grid;
+grid-template-columns: 105px 0.7fr 1fr 1.8fr 130px 0.2fr 170px;
+grid-template-rows: 1fr;
+}
+.header_еlem_1{
+    width: 105px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: white;
+}
+.header_еlem_2{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+}
+.button_home{
+    color: white;
+    opacity: 60%; 
+    transition: 0.3s;
+}
+.button_home:hover{
+    opacity: 100%; 
+}
+.button_series{
+    color: white;
+    opacity: 60%; 
+    transition: 0.3s;
+}
+.button_series:hover{
+    opacity: 100%; 
+}
+.button_film{
+    color: white;
+    opacity: 60%; 
+    transition: 0.3s;
+}
+.button_film:hover{
+    opacity: 100%; 
+}
+.button_new{
+    color: white;
+    opacity: 60%; 
+    transition: 0.3s;
+}
+.button_new:hover{
+    opacity: 100%; 
+}
+.button_history{
+    color: white;
+    opacity: 60%; 
+    transition: 0.3s;
+}
+.button_history:hover{
+    opacity: 100%; 
+}
+.inputSearch{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
+    width: 70px;
+}
+.fa-magnifying-glass{
+    color: white;
+}
+.fa-magnifying-glass:hover{
+    opacity: 60%;
+}
+.fa-bars{
+    color: white;
+}
+.fa-bars:hover{
+    opacity: 60%;
+}            
+.header_еlem_buttons_acc{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20px;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px
+}
+.acc_up_button{
+    color: white;
+    opacity: 100%;
+}
+.acc_up_button:hover{
+    opacity: 60%;
+}
+.acc_in_button{
+    background-color: rgba(0, 0, 255, 0);
+    border: 1px solid white;
+    color: white;
+    height: 30px;
+    width: 75px;
+    border-radius: 5px;
+}
+.acc_in_button:hover{
+    color:white;
+    opacity: 60%;
+}
+/* Разделы */
+/* Раздел 1 */
+.header{
+width: 100%;
+height: 80px;
+}
+/* Раздел 2 */
+.premieres{
+width: 100%;
+height: 560px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.premieres_title{
+width: 100%;
+height: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+color: white;
+}
+.premieres_bloks{
+width: 100%;
+height: 550px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: end;
+}
+.premieres_box{
+    height: 525px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.2s;
+}
+.premieres_box:hover{
+    margin-bottom: 15px;
+}
+.preview_prem{
+    width: 100%;
+    height: 385px;
+    border-radius: 15px;
+    pointer-events: none;
+    object-fit: cover;
+}
+.name_prem{
+    width: 100%;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.date_prem{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+    opacity: 60%;
+}
+.button_prem{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.button_trailer{
+width: 140px;
+height: 30px;
+border-radius: 50px;
+background-color: rgba(0, 0, 0, 0);
+color: white;
+border: 1px solid white;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+}
+.button_trailer:hover{
+    opacity: 60%;
+}
+.button_info{
+width: 110px;
+display: flex;
+align-items: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: white;
+}
+.button_info:hover{
+    opacity: 60%;
+}
+/* Раздел 3-4 */
+.films{
+width: 100%;
+height: 540px;
+display: flex;
+flex-direction: column;
+}
+.films_title{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+}
+.films_title_1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    font-weight: 900;
+    width: 85px;
+    display: flex;
+    align-items: center;
+}
+.films_title_1:hover{
+  opacity: 60%;
+}
+.films_title_2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: white;
+    display: flex;
+    align-items: center;
+    opacity: 60%;
+}
+.films_poison{
+    width: 100%;
+    height: 245px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+.films_box{
+    width: 280px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s;
+}
+.films_box:hover{
+    margin-bottom: 10px;
+}
+.preview_film{
+    width: 100%;
+    height: 155px;
+    border-radius: 10px;
+}
+.name_film{
+    width: 100%;
+    height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+.button_film_oll{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.button_film1{
+width: 100px;
+height: 30px;
+border-radius: 50px;
+background-color: rgba(0, 0, 0, 0);
+color: white;
+border: 1px solid white;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+}
+.button_film1:hover{
+    opacity: 60%;
+}
+.button_film2{
+width: 170px;
+display: flex;
+align-items: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: white;
+justify-content: start;
+}
+.button_film2:hover{
+    opacity: 60%;
+}
+/* Раздел 6 */
+.history{
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+.history_title{
+height: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+color: white;
+font-weight: 900;
+width: 85px;
+display: flex;
+align-items: center;
+}
+.history_title:hover{
+    opacity: 60%;
+  }
+.history_content{
+width: 100%;
+height: 225px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+.product-card {
+    position: relative;
+    width: 350px;
+    cursor: pointer;
+  }
+  .product-card img {
+    max-width: 100%;
+    height: 185px;
+    display: block;
+    width: 100%;
+  }
+  .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.762);
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+.info_name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    font-weight: 900;
+}
+.info_button{
+    display: flex;
+    justify-content: space-around;
+}
+.info_time{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    font-weight: 900;
+}
+  .hidden {
+    visibility: hidden;
+  }
+
+  .product-card:hover .info {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+
+
+
+
+
+
+.footer{
+background-color: grey;
+width: 100%;
+height: 200px;
+}
+
+
+
+

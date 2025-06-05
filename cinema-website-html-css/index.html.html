@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="icon" href="Preview images/logo_title.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styleHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <!-- Задний фон  -->
+    <img src="Preview images/background_image.jpg" alt="photo" class="background_image">
+    <!-- Основной контейнер -->
+    <div class="oll_container">
+    <div class="header_fon"></div>
+    <!-- Шапка -->
+    <div class="header_oll">
+       <a href="#home" style="text-decoration: none;"><div class="header_еlem"><div class="header_еlem_1">Кино-Лорд</div></div></a>
+        <div class="header_еlem"></div>
+        <div class="header_еlem" style="display: flex; align-items: end;">
+        <div class="header_еlem_2">
+            <a href="#home" style="text-decoration: none;"><div class="button_home">Главная</div></a>
+            <a href="#series" style="text-decoration: none;"><div class="button_series">Сериалы</div></a>
+            <a href="#films" style="text-decoration: none;"><div class="button_film">Фильмы</div></a>
+            <a href="#recomend" style="text-decoration: none;"><div class="button_new">Рекомендации</div></a>
+            <a href="#history" style="text-decoration: none;"><div class="button_history">История</div></a>
+        </div>
+        </div>
+        <div class="header_еlem"></div>
+        <div class="header_еlem" style="display: flex; align-items: end; justify-content: space-between;">
+                <input type="text" placeholder="Искать..." class="inputSearch">
+                <i class="fa-solid fa-magnifying-glass" id="button1"></i>
+                <i class="fa-solid fa-bars" id="myButton"></i>
+        </div>
+        <div class="header_еlem"></div>
+        <div class="header_еlem" style="display: flex; align-items: end">
+            <div class="header_еlem_buttons_acc">
+                <a href="registration.html" style="text-decoration: none;"><p class="acc_up_button">Регистрация</p></a>
+                <a href="registration.html"><button class="acc_in_button">Войти</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- Разделы -->
+       <!-- Раздел 1 -->
+       <div class="header" id="home"></div> 
+       <!-- Раздел 2 -->
+       <div class="premieres">
+        <div class="premieres_title">Предстоящие премьеры</div>
+        <div class="premieres_bloks">
+            <div class="premieres_box">
+                <a href="Films and Series/player1.html"><img src="Preview images/igra-v-kalmara.jpg" alt="photo"class="preview_prem"></a>
+                <div class="name_prem">Игра в кальмара 2 сезон</div>
+                <div class="date_prem">Декабрь 26 2024 (скоро)</div>
+                <div class="button_prem">
+                    <button class="button_trailer">Смотреть трейлер</button>
+                    <div class="button_info">Подробнее</div>
+                </div>
+            </div>
+            <div class="premieres_box">
+                <img src="Preview images/kraven_the_hunter.jpg" alt="photo"class="preview_prem">
+                <div class="name_prem">Крэйвен-охотник (2024)</div>
+                <div class="date_prem">Декабрь 11 2024 (скоро)</div>
+                <div class="button_prem">
+                    <button class="button_trailer">Смотреть трейлер</button>
+                    <div class="button_info">Подробнее</div>
+                </div>
+            </div>
+            <div class="premieres_box">
+                <img src="Preview images/mission_impossible.jpg" alt="photo"class="preview_prem">
+                <div class="name_prem">Миссия: невыполнима...</div>
+                <div class="date_prem">Май 21 2025 (скоро)</div>
+                <div class="button_prem">
+                    <button class="button_trailer">Смотреть трейлер</button>
+                    <div class="button_info">Подробнее</div>
+                </div>
+            </div>
+            <div class="premieres_box">
+                <img src="Preview images/Captain_America_Brave_New_World.jpg" alt="photo"class="preview_prem">
+                <div class="name_prem">Капитан Америка: Див...</div>
+                <div class="date_prem">Февраль 14 2025 (скоро)</div>
+                <div class="button_prem">
+                    <button class="button_trailer">Смотреть трейлер</button>
+                    <div class="button_info">Подробнее</div>
+                </div>
+            </div>
+            <div class="premieres_box">
+                <img src="Preview images/formula1.jpg" alt="photo"class="preview_prem">
+                <div class="name_prem">Формула-1 (2025)</div>
+                <div class="date_prem">Июнь 2025 года (в производстве)</div>
+                <div class="button_prem">
+                    <button class="button_trailer">Смотреть трейлер</button>
+                    <div class="button_info" id="series">Подробнее</div>
+                </div>
+            </div>
+        </div>
+       </div> 
+       <!-- Раздел 3 -->
+       <div class="films"> 
+        <div class="films_title">
+            <div class="films_title_1">Сериалы</div>
+            <div class="films_title_2">Популярные новинки</div>
+        </div>
+        <div class="films_poison">
+            <div class="films_box">
+                <img src="Preview images/boys.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Пацаны (4 сезон) 2024</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+                </div>
+            <div class="films_box">
+                <img src="Preview images/fallout.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Фоллаут (1 сезон) 2024</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+            <div class="films_box">
+                <img src="Preview images/shogun-season-1-trailer-1.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Сегун (1-3 сезон) 2024</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+            <div class="films_box">
+                <img src="Preview images/OnePice.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Ван-пис (1 сезон) 2023</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+            <div class="films_box">
+                <img src="Preview images/final-4-go-sezona-ochen-strannyh-del_16567577381076684454.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Очень странные дела (4 сезон) 2...</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+        </div>
+        <div class="films_poison">
+            <div class="films_box">
+                <img src="Preview images/scale_1200.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Бумажный дом (5 сезон) 2021</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+            <div class="films_box">
+                <img src="Preview images/geroi-6-sezona-kobra-kaj.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Кобра Кай (6 сезон) 2024</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+            <div class="films_box">
+                <img src="Preview images/nowichok.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Новичек (5 сезон) 2022</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+            <div class="films_box">
+                <img src="Preview images/dahmer.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Монстр: История Джеффри Дам...</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+            <div class="films_box">
+                <img src="Preview images/the_last_of_us.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Один из нас (1-2 сезон) 2023</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2" id="films">Добавить в плейлист</div> </div> 
+            </div>
+        </div>
+       </div>
+       <!-- Раздел 4-->
+       <div class="films">
+        <div class="films_title">
+            <div class="films_title_1">Фильмы</div>
+            <div class="films_title_2">Популярные новинки</div>
+        </div>
+        <div class="films_poison">
+            <div class="films_box">
+                <img src="Preview images/opublikovan-pervyj-poster-dzhokera-2-debyutnyj-trejler-vyjdet-10-aprelya_1712074723369763193.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Джокер: Безумие на двоих 2024</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+                </div>
+            <div class="films_box">
+                <img src="Preview images/venom-3-2024-otzyv-obzor_17300297888749977.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Веном 3: Последний танец 2024</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+            <div class="films_box">
+                <img src="Preview images/dom_u_dorogi.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Дом у дороги 2024</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+            <div class="films_box">
+                <img src="Preview images/grand_turismo.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Гранд Туризмо 2023</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+            <div class="films_box">
+                <img src="Preview images/ancharted.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Анчартед: На картах не значится...</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+        </div>
+        <div class="films_poison">
+            <div class="films_box">
+                <img src="Preview images/dead_pool.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Дэтпул и Росомаха 2024</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+            <div class="films_box">
+                <img src="Preview images/duna.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Дюна 2021</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+            <div class="films_box">
+                <img src="Preview images/bleak_adam.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Чёрный Адам 2022</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+            <div class="films_box">
+                <img src="Preview images/tor.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Тор: Любовь и гром 2022</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+            <div class="films_box">
+                <img src="Preview images/spider.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Человек-паук: Нет пути домой 20...</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2" id="recomend">Добавить в плейлист</div> </div> 
+            </div>
+        </div>
+       </div> 
+       <!-- Раздел 5 -->
+       <div class="films" style="height: 290px;">
+        <div class="films_title">
+            <div class="films_title_2" style="font-size: 14px; opacity: 100%;">Историческое</div>
+        </div>
+        <div class="films_poison">
+            <div class="films_box">
+                <img src="Preview images/napoleon.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Наполеон 2023</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+                </div>
+            <div class="films_box">
+                <img src="Preview images/german.jpg" alt="photo"class="preview_film">
+                <div class="name_film">На западном фронте без переме...</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+            <div class="films_box">
+                <img src="Preview images/liza.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Становление Елизаветы 2022</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+            <div class="films_box">
+                <img src="Preview images/bengamin.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Бенджамин Франклин 2022</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2">Добавить в плейлист</div> </div> 
+            </div>
+            <div class="films_box">
+                <img src="Preview images/billy_kid.jpg" alt="photo"class="preview_film">
+                <div class="name_film">Билли Кид 2022</div>
+                <div class="button_film_oll">
+                <button class="button_film1">Смотреть</button>
+                <div class="button_film2" id="history">Добавить в плейлист</div> </div> 
+            </div>
+        </div>
+       </div> 
+       <!-- Раздел 6 -->
+       <div class="history">
+        <div class="history_title">История</div>
+        <div class="history_content">
+        <!-- видео 1 -->
+        <div class="product-card">
+            <img src="Preview images/the_last_of_us.jpg" alt="Товар" />
+            <div class="info hidden">
+                <div class="info_name">Один из нас 2 серия (1 сезон)</div>
+                <div class="info_button">
+                    <button class="button_film1" style="width: 150px;">Смотреть с начала</button>
+                    <div class="button_film2" style="width: 130px;">Продолжить просмотр</div>
+                </div>
+                <div class="info_time">0:32:20 / 0:50:00</div>
+            </div>
+          </div>
+        <!-- видео 2 -->
+        <div class="product-card">
+            <img src="Preview images/the_last_of_us.jpg" alt="Товар" />
+            <div class="info hidden">
+                <div class="info_name">Один из нас 1 серия (1 сезон)</div>
+                <div class="info_button">
+                    <button class="button_film1" style="width: 150px;">Смотреть с начала</button>
+                    <div class="button_film2" style="width: 130px;">Продолжить просмотр</div>
+                </div>
+                <div class="info_time">0:50:00 / 0:50:00</div>
+            </div>
+          </div>
+        <!-- видео 3 -->
+        <div class="product-card">
+            <img src="Preview images/scale_1200.jpg" alt="Товар" />
+            <div class="info hidden">
+                <div class="info_name">Бумажный дом 10 серия (5 сезон)</div>
+                <div class="info_button">
+                    <button class="button_film1" style="width: 150px;">Смотреть с начала</button>
+                    <div class="button_film2" style="width: 130px;">Продолжить просмотр</div>
+                </div>
+                <div class="info_time">0:48:20 / 0:54:00</div>
+            </div>
+          </div>
+        <!-- видео 4 -->
+           <div class="product-card">
+            <img src="Preview images/scale_1200.jpg" alt="Товар" />
+            <div class="info hidden">
+                <div class="info_name">Бумажный дом 9 серия (5 сезон)</div>
+                <div class="info_button">
+                    <button class="button_film1" style="width: 150px;">Смотреть с начала</button>
+                    <div class="button_film2" style="width: 130px;">Продолжить просмотр</div>
+                </div>
+                <div class="info_time">0:30:46 / 0:52:00</div>
+            </div>
+          </div>
+          </div>
+       </div> 
+
+
+
+
+
+
+
+       <div class="footer"></div> 
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>

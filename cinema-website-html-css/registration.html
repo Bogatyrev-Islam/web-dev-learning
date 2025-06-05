@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аккаунт</title>
+    <link rel="icon" href="Preview images/logo_title.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styleRegistration.css">
+</head>
+<body>
+ <!-- задний фон -->
+ <img src="Preview images/How-to-Get-Netflix-For-Free.webp" alt="" class="fon">
+
+ <!-- Контейнер с модальными окнами -->
+  <div class="oll_modal">
+
+      <!-- Шапка -->
+  <div class="header_oll">
+    <a href="index.html.html" style="text-decoration: none;"><div class="header_еlem"><div class="header_еlem_1">CINEBOX [ ]</div></div></a>
+    <div class="header_еlem"></div>
+    <div class="header_еlem"></div>
+    <div class="header_еlem"></div>
+    <div class="header_еlem"></div>
+</div>
+
+ <!-- Фон модальных окон -->
+ <div class="modal_fon"></div>
+ <!-- Первое модальное окно -->
+ <div id="modal1" class="modal">
+   <div class="modal-content">
+   <div class="module1">
+    <a href="index.html.html" style="text-decoration: none;"><div style="display: flex; align-items: center;" class="button_out"> < Назад</div></a>
+    <button class="next-modal-btn" onclick="switchModals('modal1', 'modal2')">Войти</button>
+    </div>
+    <div class="module1_name">Создайте аккаунт</div>
+    <input type="text" placeholder="Email или номер телефона" class="imput1">
+    <input type="text" placeholder="Пароль от Email" class="imput1">
+    <input type="text" placeholder="Придумайте логин" class="imput1">
+    <input type="text" placeholder="Пароль" class="imput1">
+    <input type="text" placeholder="Подтвердите пароля" class="imput1">
+    <div class="imput1_check_oll"><input type="checkbox" class="imput1_check"> я соглашаюсь с политикой конфиденциальности</div>
+    <button class="button_ok" id="firstButton">Далее</button>
+    <div class="null1"></div>
+    <div class="this">Аккаунт Google</div>
+    <div class="this">Аккаунт Facebook</div>
+   </div>
+ </div>
+
+ <!-- Второе модальное окно -->
+ <div id="modal2" class="modal">
+   <div class="modal-content">
+    <div class="module1">
+    <a href="index.html.html" style="text-decoration: none;"><div style="display: flex; align-items: center;" class="button_out"> < Назад</div></a>
+     <button class="prev-modal-btn" onclick="switchModals('modal2', 'modal1')">Создать аккаунт</button>
+    </div>
+     <div class="module1_name">Войдите в аккаунт</div>
+     <input type="text" placeholder="Email или номер телефона" class="imput1">
+     <input type="text" placeholder="Пароль" class="imput1">
+     <div class="imput1_check_oll"><input type="checkbox" class="imput1_check"> я соглашаюсь с политикой конфиденциальности</div>
+     <button class="button_ok" id="secondButton">Далее</button>
+     <div class="null1" style="height: 250px;"></div>
+     <div class="this">Аккаунт Google</div>
+     <div class="this">Аккаунт Facebook</div>
+    </div>
+ </div>
+</div>
+
+<script>
+// Функция для открытия модального окна
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = "block";
+}
+
+// Функция для закрытия модального окна
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = "none";
+}
+
+// Функция для переключения между модальными окнами
+function switchModals(currentModalId, nextModalId) {
+  closeModal(currentModalId);
+  setTimeout(() => { // Задержка для визуальной плавности
+    openModal(nextModalId);
+  }, 100);
+}
+
+
+// Получаем ссылки на обе кнопки
+const firstButton = document.getElementById('firstButton');
+const secondButton = document.getElementById('secondButton');
+
+// Добавляем обработчики событий для первой кнопки
+firstButton.addEventListener('click', function() {
+    alert('Неполадки на сервере:( Повторите попытку позже !');
+});
+
+// Добавляем обработчики событий для второй кнопки
+secondButton.addEventListener('click', function() {
+    alert('Неполадки на сервере:( Повторите попытку позже !');
+});
+
+
+
+
+
+</script>
+
+</body>
+</html>
