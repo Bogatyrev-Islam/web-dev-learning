@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заметки</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="listsSum">
+            Количество заметок:
+            <span id="total">0</span>
+        </div>
+        <!-- поле ввода -->
+        <div class="inputList">
+        <input type="text" id="input" placeholder="Новая заметка" 
+        value="Бывают ли фотографии без обработки? Я часто встречаю такую фразу: 
+        “Эта фотография без обработки”. 
+        И, казалось бы, вроде ничего странного — человек имеет в виду, 
+        что он дополнительно не производил никаких манипуляций с этим снимком 
+        после съёмки. Но так ли это на самом деле? Бывают ли реально фотографии, 
+        о которых можно сказать, что они без обработки?">
+        <button id="btn">Сохранить</button>
+        </div>
+        <!-- поле ввода картинки -->
+        <div class="inputPhoto">
+        <input type="text" id="photo" placeholder="Добавить фото URL" value="https://www.vladmuz.ru/travel_photos/sevastopol/fiolent/fiolent-01-big.jpg">
+        </div>
+        <!-- список -->
+        <ul id="result"><div id="listDefault"><div>Добавьте новую заметку</div><i class="fa-solid fa-notes-medical"></i></div></ul>
+    </div>
+    <!-- корзина  -->
+    <div id="openAndCloseBasket">Открыть сохраненные <></div>
+    <div id="basket" class="basket">Сохраненное:</div>
+</body>
+<script src="script.js"></script>
+</html>

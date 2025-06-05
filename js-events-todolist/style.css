@@ -1,0 +1,184 @@
+body{
+    background-color: rgb(12, 12, 12);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.listsSum{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-style: italic;
+    color: white;
+}
+.wrap{
+    width: 500px;
+    min-height: 600px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #262626;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.145);
+}
+#listDefault{
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+}
+#listDefault i{
+    margin-top: 10px;
+    font-size: 50px;
+}
+.inputPhoto{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#photo{
+    height: 30px;
+    width: 100%;
+    background-color: #262626;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 13px;
+    font-style: italic;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.inputList{
+    width: 90%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#input{
+    height: 40px;
+    width: 77%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 40px 0px 0px 40px;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#btn{
+    width: 98px;
+    height: 43px;
+    border: 1px solid gray;
+    background-color: #262626;
+    color: #ffffff;
+    border-radius: 0px 40px 40px 0px;
+    font-size: 15px;
+}
+ul{
+    width: 90%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.btn{
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+}
+.li{
+    background: none;
+    border: 1px solid gray;
+    font-style: italic;
+    border-radius: 10px;
+    margin: 10px 0;
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    color: white;
+}
+.textAndPhoto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.stylePhoto{
+    width: 100%;
+}
+.text{
+   word-wrap: break-word;
+   padding: 0 10px;
+}
+.li-active{
+    color: #555;
+    text-decoration: line-through;
+    opacity: 40%;
+}
+
+/* модуль корзины */
+#openAndCloseBasket{
+    position: absolute;
+    right: 7%;
+    top: 50px;
+    border: 1px solid white;
+    color: white;
+    background-color: #262626;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 14px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.145);
+}
+
+.fa-bookmark{
+   font-size: 20px;
+   text-align: center;
+   min-width: 120px;
+   margin: 0 auto;
+   margin-bottom: 15px;
+   font-style: normal;
+}
+.basket{
+    position: absolute;
+    top: 100px;
+    left: 70%;
+    width: 350px;
+    min-height: 550px;
+    color: white;
+    background-color: #262626;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.145);
+    display: none;
+    text-align: center;
+}
+.li-copy{
+    width: 90%;
+    background-color: #262626;
+    border: 1px solid gray;
+    list-style: none;
+    border-radius: 10px;
+    margin: 10px auto;
+    font-style: italic;
+    font-size: 10px;
+}
+.li-copy img{
+    border-radius: 10px 10px 0px 0px;
+}
