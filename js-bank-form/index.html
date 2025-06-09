@@ -1,0 +1,55 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- форма для заполнения -->
+    <form id="addCardForm">
+    <label for="name">Банк</label>
+	<select class="formElem" name="name">
+		<option>Сбер</option>
+		<option>Тинькофф</option>
+		<option>Альфа</option>
+	</select>
+    <label for="type">Тип платежа</label>
+    <select class="formElem" name="type">
+        <option>Мир</option>
+		<option>Visa</option>
+		<option>PayPal</option>
+	</select>
+    <label for="number">Номер карты</label>
+	<input class="formElem" type="number" name="number" placeholder="Номер карты" required>
+    <label for="userName">Имя владельца</label>
+	<input class="formElem" type="text" name="userName" placeholder="Имя владельца" required>
+    <label for="date">Срок истечения</label>
+    <input class="formElem" type="text" name="date" placeholder="Месяц/год" required>
+	<button class="formButton" type="submit">Сохранить</button>
+</form>
+
+<!-- коллекция карт (таблица) -->
+<table id="cardsTable">
+    <tr>
+        <th>Банк</th>
+        <th>Тип платежа</th>
+        <th>Номер карты</th>
+        <th>Имя владельца</th>
+        <th>Срок истечения</th>
+    </tr>
+</table>
+
+<!-- мини карта -->
+<div id="viewCard">
+    <div id="viewName"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sberbank_Logo_2020.svg/450px-Sberbank_Logo_2020.svg.png" alt="" id="namePhoto"></div>
+    <div id="viewNumber"></div>
+    <div id="viewDate"></div>
+    <div id="viewUserAndType"><p id="viewUserName"></p><img src="https://toplogos.ru/images/logo-mir.png" alt="" id="typePhoto"></div>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>

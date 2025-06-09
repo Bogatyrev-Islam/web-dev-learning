@@ -1,0 +1,98 @@
+body{
+    display: flex;
+}
+/* добавление карточки (форма)*/
+#addCardForm{
+    width: 360px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#addCardForm label{
+    font-weight: 600;
+    color: rgb(96, 96, 96);
+}
+.formElem{
+    width: 90%;
+    margin-bottom: 10px;
+    height: 40px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 5px 5px 5px rgb(207, 207, 207);
+}
+.formButton{
+    width: 90%;
+    margin-bottom: 10px;
+    height: 40px;
+    background-color: rgb(214, 255, 152);
+    color: rgb(74, 147, 0);
+    border: 2px solid rgb(74, 147, 0);
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border-radius: 5px;
+}
+/* модель карточки */
+#viewCard{
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-family: 'OCR A', 'OCR B', Courier, monospace; letter-spacing: 2px;
+    background: greenyellow;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.500);
+}
+#viewName{
+    height: 60px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+#namePhoto{
+    width: 150px;
+}
+#viewNumber{
+    height: 80px;
+    display: flex;
+    align-items: end;
+    padding-left: 35px;
+    font-size: 25px;
+}
+#viewDate{
+    height: 20px;
+    text-align: center;
+}
+#viewUserAndType{
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 35px;
+}
+#typePhoto{
+    width: 90px;
+}
+/* таблица */
+#cardsTable{
+    width: 700px;
+    height: 20px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+}
+#cardsTable th{
+    color: rgb(96, 96, 96);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: start;
+}
+#cardsTable td{
+    color: rgb(96, 96, 96);
+    font-family: 'Courier New', Courier, monospace;
+}
